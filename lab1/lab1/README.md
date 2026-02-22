@@ -48,13 +48,15 @@ npx expo start --tunnel
 
 ```
 
-
-
+## Скріншоти застосунку
+```
+![Головна](img/Screenshot_1.png)
+![Галерея](img/Screenshot_2.png)
+![Профіль](img/Screenshot_3.png)
+```
 ---
 
 
-
-## Скріншоти застосунку
 
 ---
 
