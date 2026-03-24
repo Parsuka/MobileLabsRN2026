@@ -122,6 +122,13 @@ lab2/
 7. перейти на екран контактів і переглянути список через SectionList
 
 ---
+## Скріншоти застосунку
+
+![Головна](img/Screenshot_1.png)
+![Галерея](img/Screenshot_2.png)
+![Профіль](img/Screenshot_3.png)
+![Профіль](img/Screenshot_4.png)
+---
 
 ## Висновок
 
