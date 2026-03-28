@@ -1,4 +1,3 @@
-Ось готовий текст `README.md`, можеш просто вставити у свій файл:
 
 ````md
 # Lab 2 - React Native Navigation App
@@ -48,23 +47,6 @@
 
 ## Структура проекту
 
-```bash
-lab2/
-│── App.js
-│── package.json
-│
-├── navigation/
-│   ├── DrawerNavigator.js
-│   └── StackNavigator.js
-│
-├── screens/
-│   ├── MainScreen.js
-│   ├── NewsScreen.js
-│   ├── DetailsScreen.js
-│   └── ContactsScreen.js
-│
-└── components/
-    └── CustomDrawerContent.js
 ````
 
 ---
