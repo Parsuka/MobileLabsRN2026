@@ -1,11 +1,49 @@
-# Sample Snack app
+# Lab 3 - Gesture Clicker Game
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+## Опис проекту
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+Цей проект є лабораторною роботою №3 з дисципліни Mobile Development.  
+Метою роботи було розробити мобільну гру-клікер, де взаємодія з об'єктом відбувається через різноманітні кастомні жести. Основний акцент зроблено на використанні бібліотеки **React Native Gesture Handler** та сучасних підходах до стилізації інтерфейсу.
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+У проекті реалізовано:
+- Обробку простих та подвійних натискань (Tap)
+- Довге утримання об'єкта (Long Press)
+- Перетягування елементів по екрану (Pan)
+- Швидкі свайпи (Fling)
+- Масштабування об'єкта (Pinch)
+- Систему ігрових завдань (Challenges) та відстеження прогресу
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+---
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+## Функціональність
+
+### 1. Gesture Engine (Механіка жестів)
+У грі реалізовано нарахування очок залежно від типу жесту:
+- **Tap**: +1 бал за звичайний клік.
+- **Double Tap**: +2 бали за швидке подвійне натискання.
+- **Long Press**: бонусні бали за утримання кнопки протягом 3 секунд.
+- **Fling (Swipe)**: отримання випадкової кількості очок (до +10) за швидкий рух вправо чи вліво.
+- **Pinch**: зміна розміру об'єкта для отримання додаткових бонусів.
+- **Pan**: можливість вільно переміщувати ігровий об'єкт по робочій зоні.
+
+### 2. Система випробувань (Challenges)
+Окремий екран зі списком завдань, що відстежує активність гравця:
+- Натиснути на об'єкт 10 разів.
+- Виконати 5 подвійних кліків.
+- Утримувати об'єкт 3 секунди.
+- Зробити свайпи в різні боки та змінити масштаб.
+- Досягти загального рахунку у 100 очок.
+
+### 3. Навігація та Стилізація
+- Використано `@react-navigation/native` для переходу між ігровим полем, списком завдань та налаштуваннями.
+- Інтерфейс стилізовано за допомогою **NativeWind** (або Styled Components), що забезпечує сучасний вигляд та підтримку темної/світлої тем.
+
+
+---
+## Скріншоти застосунку
+
+![Головна](img/Screenshot_1.jpg)
+![Галерея](img/Screenshot_2.jpg)
+![Профіль](img/Screenshot_3.jpg)
+![Профіль](img/Screenshot_4.jpg)
+---
