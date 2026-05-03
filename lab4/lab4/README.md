@@ -1,11 +1,86 @@
-# Sample Snack app
+# Lab 4 - Файловий менеджер
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+## Опис проекту
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+Цей проект є лабораторною роботою №4 з дисципліни Mobile Development.  
+Метою роботи було розробити мобільний застосунок «Файловий менеджер», який реалізує роботу з локальною файловою системою пристрою. 
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+У проекті реалізовано:
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+* Навігацію між папками з breadcrumb-шляхом
+* Створення файлів `.txt` та папок
+* Перегляд та редагування текстових файлів
+* Видалення файлів і папок з підтвердженням
+* Перегляд детальної інформації про файл
+* Статистику використання пам'яті пристрою
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+---
+
+## Функціональність
+
+### 1. Навігація по файловій системі
+
+* **Breadcrumb**: відображення поточного шляху з можливістю переходу до будь-якого рівня.
+* **Перехід у папку**: тап на папку відкриває її вміст.
+* **Кнопка «Вгору»**: повернення до попередньої директорії.
+* **Головна**: швидкий перехід до кореневої директорії.
+
+### 2. Створення файлів і папок
+
+* Кнопка `+` (FAB) відкриває модальне вікно створення.
+* Перемикач **Папка / Файл .txt** для вибору типу.
+* Введення назви та початкового вмісту для `.txt` файлів.
+
+### 3. Зчитування та редагування
+
+* Тап на `.txt` файл відкриває вбудований текстовий редактор.
+* Редагування вмісту з подальшим збереженням через кнопку **Зберегти**.
+* Монопросторовий шрифт для зручного перегляду коду та тексту.
+
+### 4. Видалення
+
+* Довгий тап на будь-який елемент відкриває контекстне меню.
+* Перед видаленням виводиться **Alert** із підтвердженням.
+* Видалення папки видаляє також весь її вміст.
+
+### 5. Детальна інформація про файл
+
+Модальне вікно з атрибутами:
+
+* Назва файлу
+* Тип файлу (за розширенням)
+* Розмір у байтах / KB / MB
+* Дата останньої модифікації
+* Повний шлях до файлу
+
+### 6. Статистика пам'яті пристрою
+
+На головному екрані відображається:
+
+* Загальний обсяг пам'яті
+* Зайнятий простір
+* Вільний простір
+* Прогрес-бар використання
+
+---
+
+## Інструкція запуску
+
+1. Відкрити [snack.expo.dev](https://snack.expo.dev)
+2. Створити файли відповідно до структури проекту нижче
+3. У `package.json` вказати залежність:
+
+```json
+{
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0"
+  }
+}
+```
+---
+
+## Скріншоти застосунку
+
+| Головний екран | Створення | Редактор | Деталі файлу |
+|:-:|:-:|:-:|:-:|
+| ![Головна](img/Screenshot_1.jpg) | ![Створення](img/Screenshot_2.jpg) | ![Редактор](img/Screenshot_3.jpg) | ![Деталі](img/Screenshot_4.jpg) |
