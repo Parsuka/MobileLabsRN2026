@@ -82,4 +82,4 @@
 ## Скріншоти застосунку
 
 
-| ![Головна](img/Screenshot_1.jpg) | ![Створення](img/Screenshot_2.jpg) | ![Редактор](img/Screenshot_3.jpg) | ![Деталі](img/Screenshot_4.jpg) |
+| ![Головна](img/Screenshot_1.jpg) | ![Створення](img/Screenshot_2.jpg) | ![Редактор](img/Screenshot_3.jpg) | ![Деталі](img/Screenshot_4.jpg) |  ![Деталі](img/Screenshot_5.jpg) |
